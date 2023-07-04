@@ -1,0 +1,85 @@
+{
+  "from": "/anime/gogoanime/info/one-punch-man",
+  "id": "one-punch-man",
+  "title": "One Punch Man",
+  "url": "/category/one-punch-man",
+  "genres": [
+    "Action",
+    "Comedy",
+    "Parody",
+    "Sci-Fi",
+    "Seinen",
+    "Super Power",
+    "Supernatural"
+  ],
+  "totalEpisodes": 12,
+  "image": "https://gogocdn.net/images/upload/76049.jpg",
+  "releaseDate": "2015",
+  "description": "In this new action-comedy, everything about a young man named Saitama screams \"AVERAGE,\" from his lifeless expression, to his bald head, to his unimpressive physique. However, this average-looking fellow doesn't have your average problem... He's actually a superhero that's looking for tough opponents! The problem is, every time he finds a promising candidate he beats the snot out of them in one punch. Can Saitama finally find an evil villain strong enough to challenge him? Follow Saitama through his hilarious romps as he searches for new bad guys to challenge!",
+  "subOrDub": "sub",
+  "type": "FALL 2015 ANIME",
+  "status": "Completed",
+  "otherName": "ワンパンマン",
+  "episodes": [
+    {
+      "id": "one-punch-man-episode-1",
+      "number": 1,
+      "url": "https://gogoanime.cl//one-punch-man-episode-1"
+    },
+    {
+      "id": "one-punch-man-episode-2",
+      "number": 2,
+      "url": "https://gogoanime.cl//one-punch-man-episode-2"
+    },
+    {
+      "id": "one-punch-man-episode-3",
+      "number": 3,
+      "url": "https://gogoanime.cl//one-punch-man-episode-3"
+    },
+    {
+      "id": "one-punch-man-episode-4",
+      "number": 4,
+      "url": "https://gogoanime.cl//one-punch-man-episode-4"
+    },
+    {
+      "id": "one-punch-man-episode-5",
+      "number": 5,
+      "url": "https://gogoanime.cl//one-punch-man-episode-5"
+    },
+    {
+      "id": "one-punch-man-episode-6",
+      "number": 6,
+      "url": "https://gogoanime.cl//one-punch-man-episode-6"
+    },
+    {
+      "id": "one-punch-man-episode-7",
+      "number": 7,
+      "url": "https://gogoanime.cl//one-punch-man-episode-7"
+    },
+    {
+      "id": "one-punch-man-episode-8",
+      "number": 8,
+      "url": "https://gogoanime.cl//one-punch-man-episode-8"
+    },
+    {
+      "id": "one-punch-man-episode-9",
+      "number": 9,
+      "url": "https://gogoanime.cl//one-punch-man-episode-9"
+    },
+    {
+      "id": "one-punch-man-episode-10",
+      "number": 10,
+      "url": "https://gogoanime.cl//one-punch-man-episode-10"
+    },
+    {
+      "id": "one-punch-man-episode-11",
+      "number": 11,
+      "url": "https://gogoanime.cl//one-punch-man-episode-11"
+    },
+    {
+      "id": "one-punch-man-episode-12",
+      "number": 12,
+      "url": "https://gogoanime.cl//one-punch-man-episode-12"
+    }
+  ]
+}

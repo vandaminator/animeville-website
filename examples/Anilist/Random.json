@@ -1,0 +1,348 @@
+{
+    "id": "4927",
+    "title": {
+        "romaji": "Tomoe ga Yuku!",
+        "english": "There Goes Tomoe!",
+        "native": "巴がゆく!"
+    },
+    "malId": 4927,
+    "synonyms": [
+        "Tomoe Goes!",
+        "Go",
+        "Tomoe!",
+        "Tomoe Will Go!"
+    ],
+    "isLicensed": true,
+    "isAdult": false,
+    "countryOfOrigin": "JP",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/4927.jpg",
+    "popularity": 526,
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/4927.jpg",
+    "description": "The title character of Tomoe ga Yuku! (Tomoe Will Go!) is gutsy enough to roller skate down freeways for thrills. After losing a friend in a roller skating accident, Tomoe joins a stunt group called Green Ship. Although still mourning her friend's death, Tomoe has no reservations about embracing a relationship with the group's leader, Kazusa. Soon she discovers Green Ship is a front for an assassin training camp. She must flee her new life and love and rekindle her fiery spirit in order to fight against the organization which wants her dead.<br><br>\n(Source: Animerica Extra December 2001)",
+    "status": "Completed",
+    "releaseDate": 1991,
+    "startDate": {
+        "year": 1991,
+        "month": 10,
+        "day": 21
+    },
+    "endDate": {
+        "year": 1992,
+        "month": 1,
+        "day": 21
+    },
+    "totalEpisodes": 2,
+    "currentEpisode": 2,
+    "rating": 44,
+    "duration": 45,
+    "genres": [
+        "Adventure",
+        "Drama"
+    ],
+    "season": "FALL",
+    "studios": [
+        "Animate Film"
+    ],
+    "subOrDub": "sub",
+    "type": "OVA",
+    "recommendations": [
+        {
+            "id": 2726,
+            "malId": 2726,
+            "title": {
+                "romaji": "Sukeban Deka",
+                "english": "Sukeban Deka",
+                "native": "スケバン刑事",
+                "userPreferred": "Sukeban Deka"
+            },
+            "status": "Completed",
+            "episodes": 2,
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/2726.jpg",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/2726-iANCkL87IIPj.jpg",
+            "rating": 61,
+            "type": "OVA"
+        },
+        {
+            "id": 3137,
+            "malId": 3137,
+            "title": {
+                "romaji": "Tsurikichi Sanpei",
+                "english": null,
+                "native": "釣りキチ三平",
+                "userPreferred": "Tsurikichi Sanpei"
+            },
+            "status": "Completed",
+            "episodes": 109,
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3137-uWbwNUazQS65.jpg",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/3137-TUhnEGe45NhN.jpg",
+            "rating": 65,
+            "type": "TV"
+        },
+        {
+            "id": 633,
+            "malId": 633,
+            "title": {
+                "romaji": "Legend of Basara",
+                "english": null,
+                "native": "レジェンド オブ バサラ",
+                "userPreferred": "Legend of Basara"
+            },
+            "status": "Completed",
+            "episodes": 13,
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx633-achI9dfn1gw7.jpg",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/633-wqKMJwGhle5N.jpg",
+            "rating": 66,
+            "type": "TV"
+        }
+    ],
+    "characters": [
+        {
+            "id": 67763,
+            "role": "MAIN",
+            "name": {
+                "first": "Kazusa",
+                "last": "Himuro",
+                "full": "Kazusa Himuro",
+                "native": "氷室上総",
+                "userPreferred": "Kazusa Himuro"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b67763-gWcpYVu4x7VU.png",
+            "voiceActors": [
+                {
+                    "id": 100247,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Masashi",
+                        "last": "Hironaka",
+                        "full": "Masashi Hironaka",
+                        "native": "広中雅志",
+                        "userPreferred": "Masashi Hironaka"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n100247-uWf2j7cd0JG6.jpg"
+                }
+            ]
+        },
+        {
+            "id": 159951,
+            "role": "MAIN",
+            "name": {
+                "first": "Tomoe",
+                "last": "Oujima",
+                "full": "Tomoe Oujima",
+                "native": "王島巴",
+                "userPreferred": "Tomoe Oujima"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b159951-Ne69AlQgxtbm.png",
+            "voiceActors": [
+                {
+                    "id": 96446,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Yuriko",
+                        "last": "Yamamoto",
+                        "full": "Yuriko Yamamoto",
+                        "native": "山本百合子",
+                        "userPreferred": "Yuriko Yamamoto"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n96446-RvbWlszQjfYu.png"
+                }
+            ]
+        },
+        {
+            "id": 159953,
+            "role": "MAIN",
+            "name": {
+                "first": "Iori",
+                "last": "Toujou",
+                "full": "Iori Toujou",
+                "native": "東条伊織",
+                "userPreferred": "Iori Toujou"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/b159953-cZJv9whUTK6Q.png",
+            "voiceActors": [
+                {
+                    "id": 95021,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Kazuhiko",
+                        "last": "Inoue",
+                        "full": "Kazuhiko Inoue",
+                        "native": "井上和彦",
+                        "userPreferred": "Kazuhiko Inoue"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95021-9qAoAn6GNZ3S.png"
+                }
+            ]
+        },
+        {
+            "id": 159954,
+            "role": "SUPPORTING",
+            "name": {
+                "first": "Shizuka",
+                "last": "Oujima",
+                "full": "Shizuka Oujima",
+                "native": "王島静",
+                "userPreferred": "Shizuka Oujima"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+            "voiceActors": [
+                {
+                    "id": 95354,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Hiromi",
+                        "last": "Tsuru",
+                        "full": "Hiromi Tsuru",
+                        "native": "鶴ひろみ",
+                        "userPreferred": "Hiromi Tsuru"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/95354-Ds90swc530OH.jpg"
+                }
+            ]
+        },
+        {
+            "id": 159955,
+            "role": "SUPPORTING",
+            "name": {
+                "first": "Tsukasa",
+                "last": "Aoyagi",
+                "full": "Tsukasa Aoyagi",
+                "native": "青柳司",
+                "userPreferred": "Tsukasa Aoyagi"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+            "voiceActors": [
+                {
+                    "id": 103761,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Chiharu",
+                        "last": "Kataishi",
+                        "full": "Chiharu Kataishi",
+                        "native": "千春片石",
+                        "userPreferred": "Chiharu Kataishi"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/8761.jpg"
+                }
+            ]
+        },
+        {
+            "id": 159957,
+            "role": "SUPPORTING",
+            "name": {
+                "first": "Kai",
+                "last": null,
+                "full": "Kai",
+                "native": "海",
+                "userPreferred": "Kai"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+            "voiceActors": [
+                {
+                    "id": 100770,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Yuusaku",
+                        "last": "Yara",
+                        "full": "Yuusaku Yara",
+                        "native": "屋良有作",
+                        "userPreferred": "Yuusaku Yara"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n100770-UwcMoND5FIgC.png"
+                }
+            ]
+        },
+        {
+            "id": 159956,
+            "role": "SUPPORTING",
+            "name": {
+                "first": "Kurou",
+                "last": "Asatori",
+                "full": "Kurou Asatori",
+                "native": "麻鳥九郎",
+                "userPreferred": "Kurou Asatori"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+            "voiceActors": [
+                {
+                    "id": 95651,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Bin",
+                        "last": "Shimada",
+                        "full": "Bin Shimada",
+                        "native": "島田敏",
+                        "userPreferred": "Bin Shimada"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95651-6kRo7F4yb6Yt.png"
+                }
+            ]
+        },
+        {
+            "id": 159958,
+            "role": "SUPPORTING",
+            "name": {
+                "first": "Mrs. Toujou",
+                "last": null,
+                "full": "Mrs. Toujou",
+                "native": "東条夫人",
+                "userPreferred": "Mrs. Toujou"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+            "voiceActors": [
+                {
+                    "id": 95483,
+                    "language": "Japanese",
+                    "name": {
+                        "first": "Toshiko",
+                        "last": "Fujita",
+                        "full": "Toshiko Fujita",
+                        "native": "藤田淑子",
+                        "userPreferred": "Toshiko Fujita"
+                    },
+                    "image": "https://s4.anilist.co/file/anilistcdn/staff/large/n95483-q3MQ7a7tYsFO.png"
+                }
+            ]
+        }
+    ],
+    "relations": [
+        {
+            "id": 35457,
+            "relationType": "ADAPTATION",
+            "malId": 5457,
+            "title": {
+                "romaji": "Tomoe ga Yuku!",
+                "english": null,
+                "native": "巴がゆく！",
+                "userPreferred": "Tomoe ga Yuku!"
+            },
+            "status": "Completed",
+            "episodes": null,
+            "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/n35457-8fLXnA064R2D.png",
+            "color": "#f1a150",
+            "type": "MANGA",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/n35457-8fLXnA064R2D.png",
+            "rating": 67
+        }
+    ],
+    "episodes": [
+        {
+            "id": "tomoe-ga-yuku-episode-1",
+            "title": null,
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/4927.jpg",
+            "number": 1,
+            "createdAt": null,
+            "description": null,
+            "url": "https://gogoanime.cl//tomoe-ga-yuku-episode-1"
+        },
+        {
+            "id": "tomoe-ga-yuku-episode-2",
+            "title": null,
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/4927.jpg",
+            "number": 2,
+            "createdAt": null,
+            "description": null,
+            "url": "https://gogoanime.cl//tomoe-ga-yuku-episode-2"
+        }
+    ]
+}

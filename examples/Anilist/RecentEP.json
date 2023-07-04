@@ -1,0 +1,335 @@
+{
+    "currentPage": 1,
+    "hasNextPage": true,
+    "totalPages": 5758,
+    "totalResults": 86357,
+    "results": [
+        {
+            "id": "134107",
+            "malId": 48956,
+            "title": {
+                "romaji": "Wu Shang Shen Di 2",
+                "english": null,
+                "native": "无上神帝 第二季",
+                "userPreferred": "Wu Shang Shen Di 2"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx134107-oJ9eQNwxM5fg.jpg",
+            "rating": 64,
+            "color": "#e4ae35",
+            "episodeId": "clj2e1iea0000popkewz9fyl2-enime",
+            "episodeTitle": "Episode 220",
+            "episodeNumber": 220,
+            "genres": [
+                "Action",
+                "Fantasy"
+            ],
+            "type": "ONA"
+        },
+        {
+            "id": "136862",
+            "malId": 49448,
+            "title": {
+                "romaji": "Ni Tian Zhizun",
+                "english": null,
+                "native": "逆天至尊",
+                "userPreferred": "Ni Tian Zhizun"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136862-s2HpY8Lg8qTS.jpg",
+            "rating": 62,
+            "color": "#f1e4c9",
+            "episodeId": "clj2e227k0001popk2fv07625-enime",
+            "episodeTitle": "Episode 207",
+            "episodeNumber": 207,
+            "genres": [
+                "Action",
+                "Fantasy"
+            ],
+            "type": "ONA"
+        },
+        {
+            "id": "151847",
+            "malId": 52308,
+            "title": {
+                "romaji": "Kanojo ga Koushaku-tei ni Itta Riyuu",
+                "english": "Why Raeliana Ended Up at the Duke’s Mansion",
+                "native": "彼女が公爵邸に行った理由",
+                "userPreferred": "Kanojo ga Koushaku-tei ni Itta Riyuu"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151847-OnTYbvb4y4mp.jpg",
+            "rating": 73,
+            "color": "#e48650",
+            "episodeId": "clj2w0uag0000bdpk75qi9xq6-enime",
+            "episodeTitle": "Why Raeliana Feigned Ignorance",
+            "episodeNumber": 11,
+            "genres": [
+                "Comedy",
+                "Fantasy",
+                "Romance",
+                "Mystery"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "144188",
+            "malId": 50871,
+            "title": {
+                "romaji": "Alice Gear Aegis Expansion",
+                "english": "alice gear aegis Expansion",
+                "native": "アリス・ギア・アイギス Expansion",
+                "userPreferred": "Alice Gear Aegis Expansion"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx144188-xNF0uacm3qXQ.jpg",
+            "rating": 49,
+            "color": "#e45da1",
+            "episodeId": "clj2ukhq000005opkf07k6hpb-enime",
+            "episodeTitle": "Episode 12",
+            "episodeNumber": 12,
+            "genres": [
+                "Sci-Fi",
+                "Mecha"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "153332",
+            "malId": 52608,
+            "title": {
+                "romaji": "Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito",
+                "english": "The Aristocrat’s Otherworldly Adventure: Serving Gods Who Go Too Far",
+                "native": "転生貴族の異世界冒険録 〜自重を知らない神々の使徒〜",
+                "userPreferred": "Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153332-k3Jg04E9jNRo.png",
+            "rating": 64,
+            "color": "#ff6b1a",
+            "episodeId": "clj1h6qoa000043pk3lk8hsv2-enime",
+            "episodeTitle": "Then I Became Lord of a Domain",
+            "episodeNumber": 12,
+            "genres": [
+                "Action",
+                "Fantasy",
+                "Romance"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "147133",
+            "malId": 54124,
+            "title": {
+                "romaji": "Jian Yu Chuanqi 2",
+                "english": null,
+                "native": "剑域风云 第二季",
+                "userPreferred": "Jian Yu Chuanqi 2"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147133-IzW6Tm6FvTtQ.png",
+            "rating": null,
+            "color": "#f18643",
+            "episodeId": "clj0wl3xn00005tpkcn6casvm-enime",
+            "episodeTitle": "Episode 46",
+            "episodeNumber": 46,
+            "genres": [
+                "Action",
+                "Fantasy",
+                "Adventure"
+            ],
+            "type": "ONA"
+        },
+        {
+            "id": "159453",
+            "malId": 54021,
+            "title": {
+                "romaji": "Fangyu Quan Kai",
+                "english": null,
+                "native": "防御全开",
+                "userPreferred": "Fangyu Quan Kai"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159453-bbwQuWXkn25l.png",
+            "rating": null,
+            "color": "#937828",
+            "episodeId": "clj27ycub0000z2pkaiua6z03-enime",
+            "episodeTitle": "Episode 53",
+            "episodeNumber": 53,
+            "genres": [
+                "Action",
+                "Fantasy",
+                "Adventure"
+            ],
+            "type": "ONA"
+        },
+        {
+            "id": "137728",
+            "malId": 51039,
+            "title": {
+                "romaji": "Dou Po Cangqiong: Nian Fan",
+                "english": null,
+                "native": "斗破苍穹 年番",
+                "userPreferred": "Dou Po Cangqiong: Nian Fan"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137728-13R2XCiI9oc8.png",
+            "rating": 75,
+            "color": "#5dbbe4",
+            "episodeId": "clj16gowt0000lzpk1xifh12g-enime",
+            "episodeTitle": "Episode 49",
+            "episodeNumber": 49,
+            "genres": [
+                "Action",
+                "Fantasy",
+                "Adventure"
+            ],
+            "type": "ONA"
+        },
+        {
+            "id": "144932",
+            "malId": 50002,
+            "title": {
+                "romaji": "EDENS ZERO 2nd Season",
+                "english": "EDENS ZERO Season 2",
+                "native": "EDENS ZERO 第2期",
+                "userPreferred": "EDENS ZERO 2nd Season"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx144932-bVDXbfExeBKH.png",
+            "rating": 71,
+            "color": "#e49350",
+            "episodeId": "clj25h1740000kcpk3v3nezxy-enime",
+            "episodeTitle": "Clash of the Cosmos",
+            "episodeNumber": 12,
+            "genres": [
+                "Comedy",
+                "Sci-Fi",
+                "Action",
+                "Fantasy",
+                "Adventure"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "151189",
+            "malId": 52092,
+            "title": {
+                "romaji": "My Home Hero",
+                "english": "My Home Hero",
+                "native": "マイホームヒーロー",
+                "userPreferred": "My Home Hero"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151189-1oteiBRjwIzU.png",
+            "rating": 64,
+            "color": "#5dc9e4",
+            "episodeId": "clj1kujqt0000lcpkeaur3eiw-enime",
+            "episodeTitle": "The Current Happiness",
+            "episodeNumber": 12,
+            "genres": [
+                "Drama",
+                "Psychological",
+                "Action",
+                "Thriller"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "145139",
+            "malId": 51019,
+            "title": {
+                "romaji": "Kimetsu no Yaiba: Katanakaji no Sato-hen",
+                "english": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+                "native": "鬼滅の刃 刀鍛冶の里編",
+                "userPreferred": "Kimetsu no Yaiba: Katanakaji no Sato-hen"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145139-rRimpHGWLhym.png",
+            "rating": 83,
+            "color": "#1aaed6",
+            "episodeId": "clj1qt4ut0000izpk67411cyp-enime",
+            "episodeTitle": "A Connected Bond: Daybreak and First Light",
+            "episodeNumber": 11,
+            "genres": [
+                "Drama",
+                "Action",
+                "Fantasy",
+                "Supernatural",
+                "Adventure"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "157765",
+            "malId": 53698,
+            "title": {
+                "romaji": "World Dai Star",
+                "english": "Stella of the Theater: World Dai Star",
+                "native": "ワールドダイスター",
+                "userPreferred": "World Dai Star"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157765-eHNYfzjXfJiG.png",
+            "rating": 64,
+            "color": "#e4935d",
+            "episodeId": "clj1lgtlx0000ospk9qm4gmul-enime",
+            "episodeTitle": "Our Promise",
+            "episodeNumber": 11,
+            "genres": [],
+            "type": "TV"
+        },
+        {
+            "id": "157295",
+            "malId": 53621,
+            "title": {
+                "romaji": "Jijou wo Shiranai Tenkousei ga Guigui Kuru.",
+                "english": "My Clueless First Friend",
+                "native": "事情を知らない転校生がグイグイくる。",
+                "userPreferred": "Jijou wo Shiranai Tenkousei ga Guigui Kuru."
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157295-vHEo07yAAF1L.jpg",
+            "rating": 72,
+            "color": "#e4c9a1",
+            "episodeId": "clj1i737z0000bqpkhon38doh-enime",
+            "episodeTitle": "The Christmas Party Confession",
+            "episodeNumber": 12,
+            "genres": [
+                "Comedy",
+                "Slice of Life"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "155158",
+            "malId": 53199,
+            "title": {
+                "romaji": "Kidou Senshi Gundam: Suisei no Majo Season 2",
+                "english": "Mobile Suit Gundam: The Witch from Mercury Season 2",
+                "native": "機動戦士ガンダム 水星の魔女 Season2",
+                "userPreferred": "Kidou Senshi Gundam: Suisei no Majo Season 2"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx155158-1twjG8KtZscr.jpg",
+            "rating": 80,
+            "color": "#5d93d6",
+            "episodeId": "clj1a97yj00006ypk9bf9gs2v-enime",
+            "episodeTitle": "The Woven Path",
+            "episodeNumber": 10,
+            "genres": [
+                "Sci-Fi",
+                "Action",
+                "Mecha"
+            ],
+            "type": "TV"
+        },
+        {
+            "id": "147369",
+            "malId": 51614,
+            "title": {
+                "romaji": "Ao no Orchestra",
+                "english": null,
+                "native": "青のオーケストラ",
+                "userPreferred": "Ao no Orchestra"
+            },
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147369-Aodog1O7Nhuq.png",
+            "rating": 68,
+            "color": "#1a78ae",
+            "episodeId": "clj271dmm0000tspk486605x8-enime",
+            "episodeTitle": "The Night Before the Decisive Battle",
+            "episodeNumber": 11,
+            "genres": [
+                "Drama",
+                "Music"
+            ],
+            "type": "TV"
+        }
+    ]
+}

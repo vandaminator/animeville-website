@@ -1,0 +1,182 @@
+{
+    "currentPage": 1,
+    "hasNextPage": false,
+    "results": [
+        {
+            "id": "134107",
+            "malId": 48956,
+            "episode": 220,
+            "airingAt": 1687140000,
+            "title": {
+                "romaji": "Wu Shang Shen Di 2",
+                "english": null,
+                "native": "无上神帝 第二季",
+                "userPreferred": "Wu Shang Shen Di 2"
+            },
+            "country": "CN",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx134107-oJ9eQNwxM5fg.jpg",
+            "description": "The second season of <i>Wu Shang Shen Di</i>.",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx134107-oJ9eQNwxM5fg.jpg",
+            "genres": [
+                "Action",
+                "Fantasy"
+            ],
+            "color": "#e4ae35",
+            "rating": 64,
+            "releaseDate": null,
+            "type": "ONA"
+        },
+        {
+            "id": "136862",
+            "malId": 49448,
+            "episode": 207,
+            "airingAt": 1687140000,
+            "title": {
+                "romaji": "Ni Tian Zhizun",
+                "english": null,
+                "native": "逆天至尊",
+                "userPreferred": "Ni Tian Zhizun"
+            },
+            "country": "CN",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136862-s2HpY8Lg8qTS.jpg",
+            "description": "The entire universe is divided into the inner universe and the outer universe. The two universes are enemies of each other. The outer universe is ruled by demons, and the inner universe is divided into The Realm of gods, the Eternal Realm, and the Mortal Realm. In the universe, there are countless mortal worlds like the Tianfa Continent, and they are collectively referred to as the Jiutian Xin Region. In the field of Jiutian Xin, nine immortal emperors commanded all star fields in nine layers. Above the nine heavens is the realm of purification of immortal gods.",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136862-s2HpY8Lg8qTS.jpg",
+            "genres": [
+                "Action",
+                "Fantasy"
+            ],
+            "color": "#f1e4c9",
+            "rating": 62,
+            "releaseDate": null,
+            "type": "ONA"
+        },
+        {
+            "id": "119927",
+            "malId": 42267,
+            "episode": 322,
+            "airingAt": 1687140000,
+            "title": {
+                "romaji": "Dubu Xiaoyao",
+                "english": null,
+                "native": "独步逍遥",
+                "userPreferred": "Dubu Xiaoyao"
+            },
+            "country": "CN",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119927-y4o8s29KJANF.jpg",
+            "description": null,
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119927-y4o8s29KJANF.jpg",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Romance"
+            ],
+            "color": "#e4a150",
+            "rating": 60,
+            "releaseDate": null,
+            "type": "ONA"
+        },
+        {
+            "id": "166220",
+            "malId": 54931,
+            "episode": 13,
+            "airingAt": 1687143600,
+            "title": {
+                "romaji": "Nitian Zhan Shen",
+                "english": "The Rise of the Weak",
+                "native": "逆天战神",
+                "userPreferred": "Nitian Zhan Shen"
+            },
+            "country": "CN",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166220-qIRKU28XUHAx.jpg",
+            "description": null,
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166220-qIRKU28XUHAx.jpg",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Fantasy",
+                "Romance"
+            ],
+            "color": "#f16b43",
+            "rating": null,
+            "releaseDate": null,
+            "type": "ONA"
+        },
+        {
+            "id": "144188",
+            "malId": 50871,
+            "episode": 12,
+            "airingAt": 1687176000,
+            "title": {
+                "romaji": "Alice Gear Aegis Expansion",
+                "english": "alice gear aegis Expansion",
+                "native": "アリス・ギア・アイギス Expansion",
+                "userPreferred": "Alice Gear Aegis Expansion"
+            },
+            "country": "JP",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx144188-xNF0uacm3qXQ.jpg",
+            "description": "Centuries ago, mankind abandoned planet Earth after the Vice, a race of mechanical aliens, drove them from their home into a life adrift in space. Now resigned to starships forged of pieces of Earth’s shattered moon, the final hope for humanity lies in the hands of Actresses, young women born with the ability to wield the only weapons that can harm the Vice: Alice Gears, mechanical suits that can finally turn the tide against the alien incursion. <br><br>\n\n(Source: HIDIVE)",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx144188-xNF0uacm3qXQ.jpg",
+            "genres": [
+                "Mecha",
+                "Sci-Fi"
+            ],
+            "color": "#e45da1",
+            "rating": 49,
+            "releaseDate": 2023,
+            "type": "TV"
+        },
+        {
+            "id": "151847",
+            "malId": 52308,
+            "episode": 11,
+            "airingAt": 1687177800,
+            "title": {
+                "romaji": "Kanojo ga Koushaku-tei ni Itta Riyuu",
+                "english": "Why Raeliana Ended Up at the Duke’s Mansion",
+                "native": "彼女が公爵邸に行った理由",
+                "userPreferred": "Kanojo ga Koushaku-tei ni Itta Riyuu"
+            },
+            "country": "JP",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151847-OnTYbvb4y4mp.jpg",
+            "description": "Living inside a fairy tale may sound like a dream, but for this heroine, it’s more of a nightmare. After her mysterious death, Rinko is reborn as Raeliana—a loved and wealthy character in a novel. But she knows the ending: her murder at the hands of her fiancé. So, she hatches a plan to stay alive, one that involves a devilish duke and a phony engagement. Can she rewrite her story?<br>\n<br>\n(Source: Crunchyroll)",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/151847-S1pTlfRY2DqB.jpg",
+            "genres": [
+                "Comedy",
+                "Fantasy",
+                "Mystery",
+                "Romance"
+            ],
+            "color": "#e48650",
+            "rating": 73,
+            "releaseDate": 2023,
+            "type": "TV"
+        },
+        {
+            "id": "127550",
+            "malId": 45486,
+            "episode": 12,
+            "airingAt": 1687179600,
+            "title": {
+                "romaji": "Kuma Kuma Kuma Bear Punch!",
+                "english": "Kuma Kuma Kuma Bear - Punch!",
+                "native": "くまクマ熊ベアーぱーんち！",
+                "userPreferred": "Kuma Kuma Kuma Bear Punch!"
+            },
+            "country": "JP",
+            "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127550-RU1zDtA62lWI.jpg",
+            "description": "The second season of <i>Kuma Kuma Kuma Bear</i>.<br><br>\nYuna finds new friends and adventures in the world of her favorite MMO!<br>\n<br>\n(Source: Crunchyroll)",
+            "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127550-RU1zDtA62lWI.jpg",
+            "genres": [
+                "Adventure",
+                "Comedy",
+                "Fantasy",
+                "Slice of Life"
+            ],
+            "color": "#f1f143",
+            "rating": 70,
+            "releaseDate": 2023,
+            "type": "TV"
+        }
+    ]
+}

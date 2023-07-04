@@ -1,0 +1,168 @@
+
+{
+  "from": "/anime/gogoanime/demon?page=2",
+  "currentPage": "2",
+  "hasNextPage": true,
+  "results": [
+    {
+      "id": "maoujou-de-oyasumi",
+      "title": "Maoujou de Oyasumi",
+      "url": "https://gogoanime.cl//category/maoujou-de-oyasumi",
+      "image": "https://gogocdn.net/cover/maoujou-de-oyasumi.png",
+      "releaseDate": "Released: 2020",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "kishin-douji-zenki",
+      "title": "Kishin Douji Zenki",
+      "url": "https://gogoanime.cl//category/kishin-douji-zenki",
+      "image": "https://gogocdn.net/cover/kishin-douji-zenki.png",
+      "releaseDate": "Released: 1995",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "shuten-douji-dub",
+      "title": "Shuten Douji (Dub)",
+      "url": "https://gogoanime.cl//category/shuten-douji-dub",
+      "image": "https://gogocdn.net/cover/shuten-douji-dub.png",
+      "releaseDate": "Released: 1989",
+      "subOrDub": "dub"
+    },
+    {
+      "id": "devil-hunter-yohko",
+      "title": "Devil Hunter Yohko",
+      "url": "https://gogoanime.cl//category/devil-hunter-yohko",
+      "image": "https://gogocdn.net/images/anime/D/devil-hunter-yohko-OVA.jpg",
+      "releaseDate": "Released: 1990",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "hakuouki-ova-2021",
+      "title": "Hakuouki OVA (2021)",
+      "url": "https://gogoanime.cl//category/hakuouki-ova-2021",
+      "image": "https://gogocdn.net/cover/hakuouki-ova-2021.png",
+      "releaseDate": "Released: 2021",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "karasu-tengu-kabuto",
+      "title": "Karasu Tengu Kabuto",
+      "url": "https://gogoanime.cl//category/karasu-tengu-kabuto",
+      "image": "https://gogocdn.net/cover/karasu-tengu-kabuto.png",
+      "releaseDate": "Released: 1990",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "demon-city-shinjuku",
+      "title": "Demon City Shinjuku",
+      "url": "https://gogoanime.cl//category/demon-city-shinjuku",
+      "image": "https://gogocdn.net/images/Demon-City-Shinjuku.jpg",
+      "releaseDate": "Released: 1988",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "hakuouki-reimeiroku",
+      "title": "Hakuouki Reimeiroku",
+      "url": "https://gogoanime.cl//category/hakuouki-reimeiroku",
+      "image": "https://gogocdn.net/images/anime/H/hakuouki-reimeiroku.jpg",
+      "releaseDate": "Released: 2012",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "yakusai-kochou-dub",
+      "title": "Yakusai Kochou (Dub)",
+      "url": "https://gogoanime.cl//category/yakusai-kochou-dub",
+      "image": "https://gogocdn.net/cover/yakusai-kochou-dub.png",
+      "releaseDate": "Released: 1997",
+      "subOrDub": "dub"
+    },
+    {
+      "id": "hakuouki-kyoto-ranbu",
+      "title": "Hakuouki: Kyoto Ranbu",
+      "url": "https://gogoanime.cl//category/hakuouki-kyoto-ranbu",
+      "image": "https://gogocdn.net/images/Hakuouki - Kyoto Ranbu.jpg",
+      "releaseDate": "Released: 2013",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "bai-yao-pu-2nd-season",
+      "title": "Bai Yao Pu 2nd Season",
+      "url": "https://gogoanime.cl//category/bai-yao-pu-2nd-season",
+      "image": "https://gogocdn.net/cover/bai-yao-pu-2nd-season.png",
+      "releaseDate": "Released: 2021",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "hakuouki-hekketsuroku",
+      "title": "Hakuouki Hekketsuroku",
+      "url": "https://gogoanime.cl//category/hakuouki-hekketsuroku",
+      "image": "https://gogocdn.net/cover/hakuouki-hekketsuroku.png",
+      "releaseDate": "Released: 2010",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "machikado-mazoku-mini",
+      "title": "Machikado Mazoku Mini",
+      "url": "https://gogoanime.cl//category/machikado-mazoku-mini",
+      "image": "https://gogocdn.net/cover/machikado-mazoku-mini.png",
+      "releaseDate": "Released: 2019",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "yao-shen-ji-7th-season",
+      "title": "Yao Shen Ji 7th Season",
+      "url": "https://gogoanime.cl//category/yao-shen-ji-7th-season",
+      "image": "https://gogocdn.net/cover/yao-shen-ji-7th-season.png",
+      "releaseDate": "Released: 2023",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "yao-shen-ji-4th-season",
+      "title": "Yao Shen Ji 4th Season",
+      "url": "https://gogoanime.cl//category/yao-shen-ji-4th-season",
+      "image": "https://gogocdn.net/cover/yao-shen-ji-4th-season.png",
+      "releaseDate": "Released: 2020",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "yao-shen-ji-2nd-season",
+      "title": "Yao Shen Ji 2nd Season",
+      "url": "https://gogoanime.cl//category/yao-shen-ji-2nd-season",
+      "image": "https://gogocdn.net/cover/yao-shen-ji-2nd-season.png",
+      "releaseDate": "Released: 2018",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "yao-shen-ji-3rd-season",
+      "title": "Yao Shen Ji 3rd Season",
+      "url": "https://gogoanime.cl//category/yao-shen-ji-3rd-season",
+      "image": "https://gogocdn.net/cover/yao-shen-ji-3rd-season.png",
+      "releaseDate": "Released: 2018",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "yao-shen-ji-5th-season",
+      "title": "Yao Shen Ji 5th Season",
+      "url": "https://gogoanime.cl//category/yao-shen-ji-5th-season",
+      "image": "https://gogocdn.net/cover/yao-shen-ji-5th-season.png",
+      "releaseDate": "Released: 2021",
+      "subOrDub": "sub"
+    },
+    {
+      "id": "kimetsu-no-yaiba-dub",
+      "title": "Kimetsu no Yaiba (Dub)",
+      "url": "https://gogoanime.cl//category/kimetsu-no-yaiba-dub",
+      "image": "https://gogocdn.net/cover/kimetsu-no-yaiba-dub.png",
+      "releaseDate": "Released: 2019",
+      "subOrDub": "dub"
+    },
+    {
+      "id": "maou-sama-retry-dub",
+      "title": "Maou-sama, Retry! (Dub)",
+      "url": "https://gogoanime.cl//category/maou-sama-retry-dub",
+      "image": "https://gogocdn.net/cover/maou-sama-retry-dub.png",
+      "releaseDate": "Released: 2019",
+      "subOrDub": "dub"
+    }
+  ]
+}
