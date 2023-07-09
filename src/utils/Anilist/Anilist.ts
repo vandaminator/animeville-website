@@ -7,9 +7,12 @@ import { Trending } from "@/types/Anilist/Trending";
 import { AiringSched } from "@/types/Anilist/Airing-sched";
 import { Random } from "@/types/Anilist/Random";
 import { Popular } from "@/types/Anilist/Popular";
+import { env } from "process";
 
 class Anilist {
-  url = `${process.env.API}/meta/anilist`;
+  apiPersonal = env.API
+  api = this.apiPersonal ? this.apiPersonal : "https://api.consumet.org"
+  url = `${this.api}/meta/anilist`;
 
   async Search(data: SearchProps = {}): Promise<AdvancedSearch> {
     const searchUrl = `${this.url}/advanced-search`;

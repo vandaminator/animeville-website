@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import Menu from "@/components/Menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="main">
           <Navbar />
-          <main>{children}</main>
+          <div className="lg:grid lg:grid-cols-layout">
+            <main>{children}</main>
+            <div className="max-lg:hidden"><Menu /></div>
+          </div>
           <Footer />
         </div>
       </body>
