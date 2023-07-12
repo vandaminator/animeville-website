@@ -78,7 +78,7 @@ select {
 
 @layer components {
   .menu-comp {
-    @apply transition delay-150 ease-in-out max-lg:fixed max-lg:top-[100px] max-lg:z-10 max-lg:min-h-screen max-lg:w-screen max-lg:-translate-x-[100vw] max-lg:bg-lightjetblack;
+    @apply transition delay-150 ease-in-out max-lg:absolute max-lg:top-[100px] max-lg:z-10 max-lg:min-h-screen max-lg:w-screen max-lg:-translate-x-[100vw] max-lg:bg-lightjetblack;
   }
 
   .menu-comp.open {
