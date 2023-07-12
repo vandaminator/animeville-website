@@ -32,11 +32,14 @@ function MenuContainer({ genres, yearNumbers, top }: MenuContainerProps) {
     </option>
   ));
 
+  const toggleAirSched = () =>
+    document.getElementById("air-comp")?.classList.toggle("open");
+
   return (
     <aside>
       {/* Top side */}
       <div className="flex justify-between bg-lightjetblack p-3">
-        <button className="border-none bg-inherit font-semibold text-creamywhite outline-none">
+        <button onClick={toggleAirSched} className="border-none bg-inherit font-semibold text-creamywhite outline-none">
           Schedule
         </button>
         <Link
@@ -48,7 +51,7 @@ function MenuContainer({ genres, yearNumbers, top }: MenuContainerProps) {
       </div>
 
       {/* Season and Year */}
-      <div className="flex items-center justify-center gap-3 p-3">
+      <div className="flex items-center justify-center gap-3 bg-jetblack p-3">
         <Select name="Season" values={seasonOptions} />
         <Select name="Year" values={yearOptions} />
         <button className="my-auto rounded-md border border-gold p-2 font-bold text-gold hover:bg-gold hover:text-black">

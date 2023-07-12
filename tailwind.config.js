@@ -19,6 +19,9 @@ module.exports = {
       gridTemplateColumns: {
         "layout": "1fr 400px",
         "topairing": "min-content 25% 1fr"
+      },
+      fontFamily: {
+        logo: "var(--logoFont)"
       }
     },
   },

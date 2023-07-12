@@ -58,7 +58,7 @@ class Anilist {
 
   async AirSchedule(
     data: GenericProps = {}
-  ): Promise<{ [key: string]: { name: string; time: string }[] | undefined }> {
+  ): Promise<{ [key: string]: { name: string; time: string; id: string; }[] | undefined; }> {
     const weekDay = [
       "Sunday",
       "Monday",
@@ -88,7 +88,7 @@ class Anilist {
     }
 
     const daysInfo: {
-      [key: string]: { name: string; time: string }[] | undefined;
+      [key: string]: { name: string; time: string, id: string }[] | undefined;
     } = {};
     const format = (string: string) => {
       if (string.length === 1) return `0${string}`;
@@ -112,7 +112,7 @@ class Anilist {
       const time = `${hours} : ${minutes}`;
       const date = `${weekDay} ${animeDate.getDate()}`;
 
-      const obj = { name: anime.title.userPreferred, time };
+      const obj = { name: anime.title.userPreferred, time, id: anime.id };
 
       if (daysInfo[date] === undefined) {
         daysInfo[date] = [obj];

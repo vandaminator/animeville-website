@@ -55,18 +55,12 @@ select {
   padding: 10px;
 }
 
-@layer components {
-  .topairing {
-    @apply p-1 font-extrabold text-black;
-  }
-
-  .topairing3 {
-    @apply bg-deepred text-white;
-  }
-  .topairingother {
-    @apply text-white outline outline-creamywhite;
-  }
+.topairing {
+  padding: 0.25rem;
+  font-weight: 800;
+  color: black;
 }
+
 .topairing1 {
   background-color: var(--gold);
 }
@@ -80,4 +74,22 @@ select {
 .topairingother {
   color: white;
   outline: solid 1px var(--creamywhite);
+}
+
+@layer components {
+  .menu-comp {
+    @apply transition delay-150 ease-in-out max-lg:fixed max-lg:top-[100px] max-lg:z-10 max-lg:min-h-screen max-lg:w-screen max-lg:-translate-x-[100vw] max-lg:bg-lightjetblack;
+  }
+
+  .menu-comp.open {
+    @apply max-lg:-translate-x-0;
+  }
+
+  .air-comp {
+    @apply fixed top-[100px] z-10 h-screen -translate-x-[100vw] overflow-scroll bg-lightjetblack transition delay-150 ease-in-out max-lg:w-screen lg:w-[400px];
+  }
+
+  .air-comp.open {
+    @apply -translate-x-0;
+  }
 }

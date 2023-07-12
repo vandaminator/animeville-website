@@ -1,12 +1,19 @@
 import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local"
 
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Menu from "@/components/Menu";
+import AirSched from "@/components/AIrSched/AirSched";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const logoFont = localFont({
+  src: "./zekton rg.otf",
+  variable: "--logoFont",
+})
 
 export const metadata: Metadata = {
   title: "Animixstream",
@@ -19,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${logoFont.variable}`}>
       <head>
         <link
           rel="icon"
@@ -31,9 +38,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="main">
           <Navbar />
-          <div className="lg:grid lg:grid-cols-layout">
+          <div className="lg:grid lg:grid-cols-layout mt-[100px]">
             <main>{children}</main>
-            <div className="max-lg:hidden"><Menu /></div>
+            <div className="menu-comp" id="menu-comp"><Menu /></div>
+            <div className="air-comp" id="air-comp"><AirSched /></div>
           </div>
           <Footer />
         </div>

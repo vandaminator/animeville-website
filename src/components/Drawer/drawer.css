@@ -1,0 +1,12 @@
+.drawer {
+  width: 70vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -70vw;
+  transition: left 0.3s ease-in-out;
+}
+
+.drawer.open {
+  left: 0;
+}
