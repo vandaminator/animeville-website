@@ -7,11 +7,9 @@ import { Trending } from "@/types/Anilist/Trending";
 import { AiringSched } from "@/types/Anilist/Airing-sched";
 import { Random } from "@/types/Anilist/Random";
 import { Popular } from "@/types/Anilist/Popular";
-import { env } from "process";
 
 class Anilist {
-  apiPersonal = env.API
-  api = this.apiPersonal ? this.apiPersonal : "https://api.consumet.org"
+  api = "https://consum-net-api.vercel.app"
   url = `${this.api}/meta/anilist`;
 
   async Search(data: SearchProps = {}): Promise<AdvancedSearch> {
