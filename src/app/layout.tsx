@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import localFont from "next/font/local"
+import localFont from "next/font/local";
 
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 const logoFont = localFont({
   src: "./zekton rg.otf",
   variable: "--logoFont",
-})
+});
 
 export const metadata: Metadata = {
   title: "Animixstream",
@@ -38,10 +38,14 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="main">
           <Navbar />
-          <div className="lg:grid lg:grid-cols-layout mt-[100px]">
+          <div className="mt-[100px] px-2 lg:grid lg:grid-cols-layout lg:w-[1024px] lg:mx-auto">
             <main>{children}</main>
-            <div className="menu-comp" id="menu-comp"><Menu /></div>
-            <div className="air-comp" id="air-comp"><AirSched /></div>
+            <div className="menu-comp" id="menu-comp">
+              <Menu />
+            </div>
+            <div className="air-comp" id="air-comp">
+              <AirSched />
+            </div>
           </div>
           <Footer />
         </div>

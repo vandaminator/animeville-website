@@ -17,11 +17,14 @@ module.exports = {
         silver: "#C0C0C0"
       },
       gridTemplateColumns: {
-        "layout": "1fr 400px",
+        "layout": "1fr 300px",
         "topairing": "min-content 25% 1fr"
       },
       fontFamily: {
         logo: "var(--logoFont)"
+      },
+      boxShadow: {
+        modal: "10px 10px 5px 100vw rgba(0,0,0,0.65)"
       }
     },
   },

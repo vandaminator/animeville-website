@@ -16,7 +16,7 @@ function Navbar() {
     document.getElementById("menu-comp")?.classList.toggle("open");
   return (
     <>
-      <nav className="fixed z-20 w-full bg-jetblack">
+      <nav className="fixed z-20 flex w-full bg-jetblack lg:justify-around lg:space-x-6">
         <TiThMenu
           className="h-[32px] w-[32px] text-deepred lg:hidden"
           onClick={toggleMenu}

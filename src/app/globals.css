@@ -78,18 +78,18 @@ select {
 
 @layer components {
   .menu-comp {
-    @apply transition delay-150 ease-in-out max-lg:absolute max-lg:top-[100px] max-lg:z-10 max-lg:min-h-screen max-lg:w-screen max-lg:-translate-x-[100vw] max-lg:bg-lightjetblack;
+    @apply text-xs transition delay-150 ease-in-out max-lg:absolute max-lg:top-[100px] max-lg:z-10 max-lg:min-h-screen max-lg:w-[90vw] max-lg:-translate-x-[120vw] max-lg:bg-lightjetblack;
   }
 
   .menu-comp.open {
-    @apply max-lg:-translate-x-0;
+    @apply max-lg:-translate-x-0 max-lg:shadow-modal;
   }
 
   .air-comp {
-    @apply fixed top-[100px] z-10 h-screen -translate-x-[100vw] overflow-scroll bg-lightjetblack transition delay-150 ease-in-out max-lg:w-screen lg:w-[400px];
+    @apply fixed top-[100px] z-10 h-screen -translate-x-[120vw] overflow-scroll bg-lightjetblack text-xs transition delay-150 ease-in-out max-lg:w-[90vw] lg:w-[400px];
   }
 
   .air-comp.open {
-    @apply -translate-x-0;
+    @apply -translate-x-0 shadow-modal;
   }
 }

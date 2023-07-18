@@ -7,6 +7,7 @@ import { Trending } from "@/types/Anilist/Trending";
 import { AiringSched } from "@/types/Anilist/Airing-sched";
 import { Random } from "@/types/Anilist/Random";
 import { Popular } from "@/types/Anilist/Popular";
+import { RecentEP } from "@/types/Anilist/RecentEP";
 
 class Anilist {
   api = "https://consum-net-api.vercel.app"
@@ -33,7 +34,7 @@ class Anilist {
     return info;
   }
 
-  async RecentEp(data: GenericProps = {}) {
+  async RecentEp(data: GenericProps = {}): Promise<RecentEP> {
     const recentUrl = `${this.url}/recent`;
     const response = await axios(recentUrl, { params: data });
     const info = await response.data;
