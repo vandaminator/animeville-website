@@ -1,0 +1,1 @@
+export type severNames = "gogocdn" | "streamsb" | "vidstreaming"
