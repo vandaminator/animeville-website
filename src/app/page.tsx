@@ -1,15 +1,16 @@
 "use client";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loading from "./loading";
 import Anilist from "@/utils/Anilist/Anilist";
 import { Result as trendingResult } from "@/types/Anilist/Trending";
 import { Result as epResult } from "@/types/Anilist/RecentEP";
 import TopAnime from "@/components/Home-comps/TopAnime";
+import Body from "@/components/Home-comps/Body";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  const [topData, setTopData] = useState() as topState;
-  const [animeData, setAnimeData] = useState() as animeState;
+  const [topData, setTopData] = useState<trendingResult[] | undefined>();
+  const [animeData, setAnimeData] = useState<epResult[] | "loading">("loading");
 
   useEffect(() => {
     const loadData = async () => {
@@ -29,19 +30,14 @@ function Home() {
   return (
     <>
       {isLoading && <Loading />}
-      {!isLoading && <TopAnime topData={topData} />}
+      {!isLoading && (
+        <>
+          <TopAnime topData={topData} />
+          <Body initial={animeData} />
+        </>
+      )}
     </>
   );
 }
-
-type topState = [
-  trendingResult[] | undefined,
-  Dispatch<SetStateAction<trendingResult[] | undefined>>
-];
-
-type animeState = [
-  epResult[] | undefined,
-  Dispatch<SetStateAction<epResult[] | undefined>>
-];
 
 export default Home;

@@ -26,7 +26,7 @@ export enum Format {
   TV_SHORT = "TV_SHORT",
   OVA = "OVA",
   ONA = "ONA",
-  MOVIE = " MOVIE",
+  MOVIE = "MOVIE",
 }
 
 export enum SortField {

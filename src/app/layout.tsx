@@ -1,4 +1,4 @@
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="main">
           <Navbar />
-          <div className="mt-[100px] px-2 lg:grid lg:grid-cols-layout lg:w-[1024px] lg:mx-auto">
+          <div className="mt-[100px] px-2 lg:mx-auto lg:grid lg:w-[1024px] lg:grid-cols-layout xl:w-[1280px]">
             <main>{children}</main>
             <div className="menu-comp" id="menu-comp">
               <Menu />
