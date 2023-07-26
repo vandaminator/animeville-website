@@ -132,6 +132,8 @@ export enum RelationType {
     Other = "OTHER",
     SideStory = "SIDE_STORY",
     Summary = "SUMMARY",
+    Sequel = "SEQUEL",
+    Prequel = "PREQUEL"
 }
 
 export enum Status {

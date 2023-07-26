@@ -92,4 +92,16 @@ select {
   .air-comp.open {
     @apply -translate-x-0 shadow-modal;
   }
+
+  .grid-cols-ep {
+    @apply grid-cols-[repeat(auto-fill,minmax(40px,1fr))] grid-rows-[repeat(auto-fill,minmax(40px,1fr))];
+  }
+
+  .ep {
+    @apply flex items-center justify-center bg-gold p-1 font-bold;
+  }
+
+  .ep.current {
+    @apply bg-inherit text-gold outline outline-1 outline-gold;
+  }
 }

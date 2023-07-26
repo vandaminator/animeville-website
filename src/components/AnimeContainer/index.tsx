@@ -13,7 +13,7 @@ type Props = {
 
 function AnimeContainer({ content, contentType }: Props) {
   const [showContent, setShowContent] = useState<React.JSX.Element[]>();
-  
+
   useEffect(() => {
     let newShow: JSX.Element[] = [];
 
@@ -21,10 +21,11 @@ function AnimeContainer({ content, contentType }: Props) {
       const currentContent = content as epResult[];
       newShow = currentContent.map(
         (
-          { image, title: { userPreferred }, episodeId, episodeNumber },
+          { image, title: { userPreferred }, episodeId, episodeNumber, id },
           num
         ) => (
           <EpCard
+            id={id}
             img={image}
             title={userPreferred}
             epId={episodeId}
@@ -52,7 +53,7 @@ function AnimeContainer({ content, contentType }: Props) {
   }, [contentType, content]);
 
   return (
-    <ul className="grid list-none grid-cols-3 gap-1 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 my-2">
+    <ul className="my-2 grid list-none grid-cols-3 gap-1 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
       {showContent}
     </ul>
   );

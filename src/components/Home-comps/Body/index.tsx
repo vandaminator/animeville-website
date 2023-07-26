@@ -78,7 +78,7 @@ function Body({ initial }: Props) {
         {menuItems.map((menuItem) => (
           <div
             key={menuItem.id}
-            className={`border border-x-0 border-t-0 bg-lightjetblack/80 font-bold ${
+            className={`cursor-pointer border border-x-0 border-t-0 bg-lightjetblack/80 font-bold ${
               activeMenu.id === menuItem.id
                 ? "border-gold bg-lightjetblack"
                 : "border-silver"

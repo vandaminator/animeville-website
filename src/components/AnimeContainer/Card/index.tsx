@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {
@@ -11,7 +12,7 @@ type Props = {
 function Card({ img, title, id, type }: Props) {
   return (
     <li className="bg-lightjetblack">
-      <a href={`#`} className="text-creamywhite bg-lightjetblack">
+      <Link href={`#`} className="text-creamywhite bg-lightjetblack">
         <Image
           src={img}
           alt="animeImage"
@@ -23,7 +24,7 @@ function Card({ img, title, id, type }: Props) {
           <p className="font-semibold text-xs">{title}</p>
           <p className="text-creamywhite/40">{type}</p>
         </div>
-      </a>
+      </Link>
     </li>
   );
 }

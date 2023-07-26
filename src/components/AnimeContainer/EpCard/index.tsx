@@ -1,17 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {
+  id: string
   img: string;
   title: string;
   epNum: number;
   epId: string;
 };
 
-function EpCard({ img, title, epId, epNum }: Props) {
+function EpCard({ img, title, epNum, id }: Props) {
   return (
     <li className="bg-lightjetblack">
-      <a href={`#`} className="text-creamywhite bg-lightjetblack">
+      <Link href={`/watch/${id}?epNum=${epNum}`} className="text-creamywhite bg-lightjetblack">
         <Image
           src={img}
           alt="animeImage"
@@ -23,7 +25,7 @@ function EpCard({ img, title, epId, epNum }: Props) {
           <p className="font-semibold text-xs">{title}</p>
           <p className="text-creamywhite/40">{`EP ${epNum}`}</p>
         </div>
-      </a>
+      </Link>
     </li>
   );
 }

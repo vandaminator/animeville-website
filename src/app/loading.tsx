@@ -1,5 +1,3 @@
-import React from "react";
-
 function Loading() {
   return (
     <div className="animate-pulse space-y-2 py-3">

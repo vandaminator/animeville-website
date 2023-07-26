@@ -64,7 +64,7 @@ function TopAnime({ topData }: Props) {
             />
 
             {/* animeinfo */}
-            <div className="flex flex-col justify-between p-2 text-sm">
+            <div className="flex flex-col justify-between p-2 text-sm flex-grow">
               <h1 className="mb-2 mt-1 text-2xl font-bold max-sm:text-lg">
                 {currentTop.name}
               </h1>
@@ -96,8 +96,8 @@ function TopAnime({ topData }: Props) {
                 ))}
               </div>
               <div className="space-y-2">
-                <AiOutlineArrowLeft size={"24px"} onClick={Back} />
                 <AiOutlineArrowRight size={"24px"} onClick={Next} />
+                <AiOutlineArrowLeft size={"24px"} onClick={Back} />
               </div>
             </div>
           </div>
