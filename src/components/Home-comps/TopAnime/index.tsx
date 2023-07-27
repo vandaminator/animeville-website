@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useReducer, useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
@@ -74,12 +75,12 @@ function TopAnime({ topData }: Props) {
               ></div>
               <div className="space-y-3">
                 <p className="my-2">{currentTop.genres.join(", ")}</p>
-                <a
+                <Link
                   href={`/watch/${currentTop.id}`}
                   className="my-3 rounded-md bg-gold p-2 text-black"
                 >
                   watch
-                </a>
+                </Link>
               </div>
             </div>
 

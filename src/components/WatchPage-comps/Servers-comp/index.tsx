@@ -11,7 +11,11 @@ type State = {
 
 function Servers({ epId }: Props) {
   const [epData, setEpData] = useState<State | "loading">("loading");
-  const vidFrame = document.getElementById("myVid") as HTMLIFrameElement;
+  
+  const changeServer = (url: string) => {
+    const vidFrame = document.getElementById("myVid") as HTMLIFrameElement;
+    vidFrame.src = url;
+  }
 
   useEffect(() => {
     const canDub = /-episode-\d+$/;
@@ -51,9 +55,7 @@ function Servers({ epId }: Props) {
               <button
                 className="rounded-lg bg-jetblack p-2 text-creamywhite"
                 key={num}
-                onClick={() => {
-                  vidFrame.src = url;
-                }}
+                onClick={() => changeServer(url)}
               >
                 {name}
               </button>
@@ -68,9 +70,7 @@ function Servers({ epId }: Props) {
                 <button
                   className="rounded-lg bg-jetblack p-2 text-creamywhite"
                   key={num}
-                  onClick={() => {
-                    vidFrame.src = url;
-                  }}
+                  onClick={() => changeServer(url)}
                 >
                   {name}
                 </button>
