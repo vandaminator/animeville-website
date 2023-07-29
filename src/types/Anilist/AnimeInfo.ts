@@ -9,6 +9,7 @@ export interface Info {
     title:             Title;
     malId:             number;
     synonyms:          string[];
+    trailer?:           Trailer;
     isLicensed:        boolean;
     isAdult:           boolean;
     countryOfOrigin:   string;
@@ -64,6 +65,12 @@ export interface VoiceActor {
     language: Language;
     name:     Name;
     image:    string;
+}
+
+export interface Trailer {
+    id?:        string;
+    site?:      string;
+    thumbnail?: string;
 }
 
 export enum Language {

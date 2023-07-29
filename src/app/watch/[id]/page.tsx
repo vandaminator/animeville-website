@@ -102,6 +102,7 @@ async function WatchPage({
         src={currentEp.headers.Referer}
         className="my-3 aspect-[16/11] w-full"
         id="myVid"
+        allowFullScreen
       ></iframe>
 
       {/* Anime info page */}

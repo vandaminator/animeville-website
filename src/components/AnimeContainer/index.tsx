@@ -5,10 +5,11 @@ import { Result as searchResult } from "@/types/Anilist/AdvancedAnimeSearch";
 import { Result as epResult } from "@/types/Anilist/RecentEP";
 import EpCard from "./EpCard";
 import Card from "./Card";
+import { Ation } from "@/types/Anilist/AnimeInfo";
 
 type Props = {
   contentType: "ep" | "card";
-  content: (epResult | trendingResult | searchResult)[];
+  content: (epResult | trendingResult | searchResult | Ation)[];
 };
 
 function AnimeContainer({ content, contentType }: Props) {
