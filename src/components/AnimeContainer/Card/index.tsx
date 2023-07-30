@@ -12,7 +12,7 @@ type Props = {
 function Card({ img, title, id, type }: Props) {
   return (
     <li className="bg-lightjetblack">
-      <Link href={`#`} className="text-creamywhite bg-lightjetblack">
+      <Link href={`/info/${id}`} className="text-creamywhite bg-lightjetblack">
         <Image
           src={img}
           alt="animeImage"
