@@ -3,6 +3,7 @@ import Anilist from "@/utils/Anilist/Anilist";
 import MenuContainer, { genresType } from "./container";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Trailer } from "@/types/Anilist/Trending";
+import { Genre, Season } from "@/utils/Anilist/types";
 
 const genres: genresType = {
   Action: { checked: false },
@@ -36,24 +37,34 @@ export type trendInfo = {
 
 export type trendList = trendInfo[];
 
-type topState = [
-  trendList | "loading",
-  Dispatch<SetStateAction<trendList | "loading">>
-];
-
 function Menu() {
+  const [top, setTop] = useState<trendList | "loading">("loading");
+
   const yearNumbers: number[] = [];
-  const startYear = new Date().getFullYear() + 1;
+  const date = new Date();
+  const startYear = date.getFullYear() + 1;
   const endYear = 1980;
+
+  const seasonMapping = (monthNum: number) => {
+    // January starts in 0
+
+    if (monthNum in [11, 0, 1]) return Season.WINTER;
+    else if (monthNum in [2, 3, 4]) return Season.SPRING;
+    else if (monthNum in [5, 6, 7]) return Season.SUMMER;
+    else if (monthNum in [8, 9, 10]) return Season.FALL;
+    else return Season.FALL;
+  };
+
+  const season = seasonMapping(date.getMonth());
 
   for (let year = startYear; year > endYear; year--) {
     yearNumbers.push(year);
   }
-  
+
   useEffect(() => {
     new Anilist().Trending().then((value) => {
       const results = value.results.slice(0, 5);
-      const muted = results.map((result, number) => {
+      const newTop = results.map((result, number) => {
         const {
           id,
           title: { userPreferred: name },
@@ -70,12 +81,19 @@ function Menu() {
           number: number + 1,
         };
       });
-      setTop(muted);
+      setTop(newTop);
     });
   }, []);
 
-  const [top, setTop] = useState("loading") as topState;
-  return <MenuContainer genres={genres} yearNumbers={yearNumbers} top={top} />;
+  return (
+    <MenuContainer
+      genres={genres}
+      yearNumbers={yearNumbers}
+      top={top}
+      currentSeason={season}
+      currentYear={startYear - 1}
+    />
+  );
 }
 
 export default Menu;

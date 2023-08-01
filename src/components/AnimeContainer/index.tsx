@@ -16,6 +16,7 @@ function AnimeContainer({ content, contentType }: Props) {
   const [showContent, setShowContent] = useState<React.JSX.Element[]>();
 
   useEffect(() => {
+    if(!content) return;
     let newShow: JSX.Element[] = [];
 
     if (contentType === "ep") {

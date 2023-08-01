@@ -9,11 +9,20 @@ import { useState } from "react";
 
 // import Menu from "../Menu";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-// Todo: Animate the menu on mobile devices properly on 36:0
 function Navbar() {
+  const router = useRouter()
+  const [search, setSearch] = useState("");
+  
   const toggleMenu = () =>
     document.getElementById("menu-comp")?.classList.toggle("open");
+
+  const handleEnter = () => {
+    const searchPath = `/search?query=${search}`
+    router.push(searchPath)
+  }
+
   return (
     <>
       <nav className="fixed z-20 flex w-full bg-jetblack lg:justify-around lg:space-x-6">
@@ -41,7 +50,13 @@ function Navbar() {
             type="text"
             id="search-input"
             name="search-input"
-            className="w-full border-none bg-inherit outline-none"
+            className="w-full border-none bg-inherit outline-none placeholder:text-jetblack"
+            placeholder="search..."
+            value={search}
+            onChange={(e) => setSearch(e.currentTarget.value)}
+            onKeyDown={(e) => {
+              if (e.key == "Enter") handleEnter()
+            }}
           />
         </div>
       </nav>
