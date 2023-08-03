@@ -9,6 +9,7 @@ import Footer from "@/components/Footer/Footer";
 import Menu from "@/components/Menu";
 import AirSched from "@/components/AIrSched/AirSched";
 import animixstreamKeywords from "@/utils/keywords";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "HD Streaming: Enjoy anime in stunning high-definition quality. Animixstream ensures you experience the rich visuals and animations the way they were meant to be seen, making your anime-watching experience truly unforgettable.",
   keywords: animixstreamKeywords,
-  category: "Anime"
+  category: "Anime",
 };
 
 export default function RootLayout({
@@ -45,6 +46,11 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+        <script
+          async
+          crossOrigin="anonymous"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8410022083362673"
+        ></script>
       </head>
       <body className={inter.className}>
         <div className="main">
@@ -65,4 +71,3 @@ export default function RootLayout({
     </html>
   );
 }
-
