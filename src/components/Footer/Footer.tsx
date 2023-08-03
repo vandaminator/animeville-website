@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>Footer</footer>
+    <footer className="flex-1 mt-3 p-6">Footer</footer>
   )
 }
 

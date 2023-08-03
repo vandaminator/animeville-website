@@ -17,7 +17,6 @@ body {
   color: var(--creamywhite, #f5f5f5);
 }
 
-.main,
 aside {
   min-height: 100vh;
 }

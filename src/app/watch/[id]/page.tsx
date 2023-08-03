@@ -35,7 +35,7 @@ async function getPageData(id: string, epNumber = 1, title: string) {
 
   const data: Info = await response.json();
 
-  if (!data.episodes) throw new Error("no episodes for this one")
+  if (data.episodes.length === 0) throw new Error("no episodes for this one")
   
   const toHyphenatedLowerCase = (str: string) => {
     const hyphenatedStr = str
