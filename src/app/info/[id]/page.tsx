@@ -16,6 +16,7 @@ async function getAnimeInfo(id: string) {
   const response = await fetch(
     `https://consum-net-api.vercel.app/meta/anilist/data/${id}`
   );
+  if (!response.ok) throw new Error("Cannot get information from that")
   const data: Info = await response.json();
   return data;
 }

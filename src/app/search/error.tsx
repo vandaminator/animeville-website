@@ -18,9 +18,7 @@ export default function Error({
   const router = useRouter();
   const { message } = error;
   const canShow = [
-    "no episodes for this one",
-    "cant get info on it",
-    "Episode is unavaliable",
+    "Search is unavaliable Today",
   ];
   const isShow = canShow.includes(message);
 

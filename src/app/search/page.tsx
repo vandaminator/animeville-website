@@ -45,7 +45,7 @@ function SearchPage() {
       console.log(strParams)
       const url = `https://consum-net-api.vercel.app/meta/anilist/advanced-search?${strParams}`;
       const response = await fetch(url);
-      if (!response.ok) throw new Error("response unsuccessful");
+      if (!response.ok) throw new Error("Search is unavaliable Today");
       const data: AdvancedSearch = await response.json();
       console.log(data)
       setAppState((prev) => ({ ...prev, isLast: !data.hasNextPage }));
