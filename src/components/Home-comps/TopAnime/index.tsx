@@ -76,7 +76,7 @@ function TopAnime({ topData }: Props) {
               <div className="space-y-3">
                 <p className="my-2">{currentTop.genres.join(", ")}</p>
                 <Link
-                  href={`/watch/${currentTop.id}`}
+                  href={`/watch/${currentTop.id}?title=${currentTop.name}`}
                   className="my-3 rounded-md bg-gold p-2 text-black"
                 >
                   watch

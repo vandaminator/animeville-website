@@ -1,66 +1,89 @@
 "use client";
 
+import { serversUrl as aniUrl } from "@/utils/Anilist/Urls";
+import { serversUrl as gogoUrl } from "@/utils/GogoAnime/Urls";
 import { useEffect, useState } from "react";
 
-type Props = { epId: string };
+type Props = { epId: string; canGogo: boolean };
 type Data = { name: string; url: string }[];
 type State = {
-  Sub: Data;
+  Sub?: Data;
   Dub?: Data;
 };
 
-function Servers({ epId }: Props) {
+function Servers({ epId, canGogo }: Props) {
   const [epData, setEpData] = useState<State | "loading">("loading");
-  
+
   const changeServer = (url: string) => {
     const vidFrame = document.getElementById("myVid") as HTMLIFrameElement;
     vidFrame.src = url;
-  }
+  };
 
   useEffect(() => {
-    const canDub = /-episode-\d+$/;
     const loadData = async () => {
-      const response = await fetch(
-        `https://consum-net-api.vercel.app/meta/anilist/servers/${epId}`
-      );
-      const subData: Data = await response.json();
-      const newEpData: State = { Sub: subData };
+      let newEpData: State;
 
-      if (canDub.test(epId)) {
-        const ep = epId.split("-episode-");
-        const dubEp = ep.join("-dub-episode-");
-        const dubResponse = await fetch(
-          `https://consum-net-api.vercel.app/meta/anilist/servers/${dubEp}`
-        );
-        if (dubResponse.ok) {
-          const dubData: Data = await dubResponse.json();
-          newEpData["Dub"] = dubData;
+      if (canGogo) {
+        // getting sub from GogoAnime
+        const gogoResponse = await fetch(gogoUrl(epId));
+        if (gogoResponse.ok) {
+          const subData: Data = await gogoResponse.json();
+          newEpData = { Sub: subData };
+
+          // getting dub
+          const dubEp = epId.split("-episode-").join("-dub-episode-");
+          const gogoDubRes = await fetch(gogoUrl(dubEp));
+
+          if (gogoDubRes.ok) {
+            const dubData: Data = await gogoDubRes.json();
+            newEpData.Dub = dubData;
+            // this will have dub
+            setEpData(newEpData);
+          } else setEpData(newEpData); // this wont have dub
+        } else {
+          // if not ok then we cant get dub so
+          // we use Anilist
+          const aniResponse = await fetch(aniUrl(epId));
+          if (aniResponse.ok) {
+            const subData: Data = await aniResponse.json();
+            newEpData = { Sub: subData };
+          }
+        }
+      } else {
+        const aniResponse = await fetch(aniUrl(epId));
+        if (aniResponse.ok) {
+          const subData: Data = await aniResponse.json();
+          newEpData = { Sub: subData };
+          setEpData(newEpData);
         }
       }
-      setEpData(newEpData);
     };
 
     loadData();
-  }, [epId]);
+  }, [canGogo, epId]);
 
+  // can show if is not data is loading  or     both are not nothing
+  const canShow = !(epData === "loading" || !epData.Sub && !epData.Dub);
   return (
     <>
-      {epData !== "loading" && (
+      {canShow && (
         <div className="my-4 bg-lightjetblack/60 p-3">
           <p className="text-xs">if video is not playing please try these</p>
           {/* Sub */}
-          <div className="my-3 flex flex-wrap items-center gap-2">
-            <p className="font-bold">Sub: </p>
-            {epData.Sub.map(({ name, url }, num) => (
-              <button
-                className="rounded-lg bg-jetblack p-2 text-creamywhite"
-                key={num}
-                onClick={() => changeServer(url)}
-              >
-                {name}
-              </button>
-            ))}
-          </div>
+          {epData.Sub !== undefined && (
+            <div className="my-3 flex flex-wrap items-center gap-2">
+              <p className="font-bold">Sub: </p>
+              {epData.Sub.map(({ name, url }, num) => (
+                <button
+                  className="rounded-lg bg-jetblack p-2 text-creamywhite"
+                  key={num}
+                  onClick={() => changeServer(url)}
+                >
+                  {name}
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* Dub */}
           {epData.Dub !== undefined && (

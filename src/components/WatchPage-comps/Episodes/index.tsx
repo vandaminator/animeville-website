@@ -1,22 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { Episode } from "@/types/Anilist/AnimeInfo";
 
-type Props = { episodes: Episode[]; epNum: number; id: string };
+type Props = { episodes: number[]; epNum: number; id: string; title: string };
 
-function Episodes({ episodes, epNum, id }: Props) {
+function Episodes({ episodes, epNum, id, title }: Props) {
   return (
     <>
       <h1 className="text-2xl font-bold mt-3">Episodes</h1>
       <div className="grid-cols-ep grid list-none gap-3 text-black">
         {episodes.map((ep, num) => (
           <Link
-            href={`/watch/${id}?epNum=${ep.number}`}
-            className={`ep ${epNum === ep.number ? "current" : ""}`}
+            href={`/watch/${id}?epNum=${ep}&title=${title}`}
+            className={`ep ${epNum === ep ? "current" : ""}`}
             key={num}
           >
-            {ep.number}
+            {ep}
           </Link>
         ))}
       </div>

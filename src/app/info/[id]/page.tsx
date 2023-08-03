@@ -66,7 +66,7 @@ async function InfoPage({ params: { id } }: Props) {
     relations: tvRelations,
   };
 
-  const mainName = title.english ?? title.native;
+  const mainName = title.romaji ?? title.native;
   const animeNames = [title.english, title.native, title.romaji].filter(
     (value) => value !== null
   );
@@ -79,7 +79,7 @@ async function InfoPage({ params: { id } }: Props) {
         style={{ backgroundImage: `url(${animeCover})` }}
       >
         <Link
-          href={`/watch/${animeId}`}
+          href={`/watch/${animeId}?title=${title.romaji}`}
           className="bg-gold p-2 hover:bg-transparent hover:text-gold hover:outline hover:outline-gold"
         >
           Watch
