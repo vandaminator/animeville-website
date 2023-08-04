@@ -13,15 +13,18 @@
 }
 
 body {
-  background-color: var(--jetblack, #1a1a1a);
   color: var(--creamywhite, #f5f5f5);
+  background-color: var(--lightjetblack, #252525);
 }
 
+main,
 aside {
   min-height: 100vh;
+  background-color: var(--jetblack, #1a1a1a);
 }
 
 .main {
+  background-color: var(--jetblack, #1a1a1a);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
