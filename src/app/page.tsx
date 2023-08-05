@@ -15,11 +15,13 @@ function Home() {
   useEffect(() => {
     const loadData = async () => {
       const anilist = new Anilist();
-      const top = (await anilist.Trending()).results.slice(0, 5);
-      const anime = (await anilist.RecentEp()).results;
+      const topReq = anilist.Trending();
+      const animeReq = anilist.RecentEp();
 
-      setTopData(top);
-      setAnimeData(anime);
+      const [top, anime] = await Promise.all([topReq, animeReq])
+
+      setTopData(top.results.slice(0, 10));
+      setAnimeData(anime.results);
 
       setIsLoading(false);
     };
