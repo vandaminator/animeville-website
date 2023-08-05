@@ -12,6 +12,7 @@ import Description, {
 } from "@/types/GogoAnime/AnimeDescription";
 import gogoStream from "@/types/GogoAnime/AnimeStreamingLinks";
 import { streamUrl } from "@/utils/Anilist/Urls";
+import { searchByTitle, getByGogoId, getByTitle } from "@/utils/Watch-Funcs";
 
 type Props = {
   params: { id: string };
@@ -27,64 +28,55 @@ type infoObj = {
   canGogo: boolean;
 };
 
-async function getPageData(id: string, epNumber = 1, title: string) {
+async function getPageData(id: string, epNumber = 1, title = "") {
   const response = await fetch(
     `https://consum-net-api.vercel.app/meta/anilist/info/${id}`
   );
-  if (!response.ok) throw new Error("cant get info on it")
+  if (!response.ok) throw new Error("cant get info on it");
 
   const data: Info = await response.json();
 
-  if (data.episodes.length === 0) throw new Error("no episodes for this one")
-  
-  const toHyphenatedLowerCase = (str: string) => {
-    const hyphenatedStr = str
-      .replace(/[^a-zA-Z0-9]+/g, "-") // Replace non-alphanumeric characters with a single hyphen
-      .replace(/^-+|-+$/g, "") // Remove hyphens from the beginning or end of the string
-      .toLowerCase(); // Convert to lowercase
-    return hyphenatedStr;
-  };
-  const gogoId = toHyphenatedLowerCase(title);
-  const gogoUrl = infoUrl(gogoId);
-  const gogoResponse = await fetch(gogoUrl);
+  if (data.episodes.length === 0) throw new Error("no episodes for this one");
 
   let currentEp: aniEps | gogoEps | undefined;
-  let animeEpisodes: (aniEps | gogoEps)[];
+  let animeEpisodes: (aniEps | gogoEps)[] = []
 
-  if (gogoResponse.ok) {
-    const gogoData: Description = await gogoResponse.json();
-    animeEpisodes = gogoData.episodes;
-    currentEp = animeEpisodes.find((ep) => ep.number === epNumber);
-  } else {
-    animeEpisodes = data.episodes;
-    currentEp = animeEpisodes.find((ep) => ep.number === epNumber);
-  }
+  const idData = await getByGogoId(title, epNumber);
+  currentEp = idData[0];
+  if (idData[1] !== undefined) animeEpisodes = idData[1];
 
   // if true it follows GogoAnime id convention
   // it might also dub too
   const checkGogo = /-episode-\d+$/;
 
   if (currentEp === undefined) {
+    // we gona use Gogo anime search here
+    const animeName = title.replace(/[^\w\s]/gi, "");
+    const search = await searchByTitle(animeName, epNumber);
+    if (search[0] !== undefined) currentEp = search[0];
+    if (search[1] !== undefined) animeEpisodes = search[1];
+  }
+
+  if (currentEp === undefined) {
     // maybe the title in the search params is
     // not helping so lets try this atleast
-
-    const getId = animeEpisodes[0].id;
+    const getId = data.episodes[0].id;
     const isGogo = checkGogo.test(getId);
 
     if (isGogo) {
-      const idEpWantedArray = getId.split("-episode-");
-      const newId = idEpWantedArray[0];
-
-      const newGogoRes = await fetch(infoUrl(newId));
-      if (newGogoRes.ok) {
-        const newGogoData: Description = await newGogoRes.json();
-        animeEpisodes = newGogoData.episodes;
-        currentEp = animeEpisodes.find((value) => value.number === epNumber);
-
-        if (currentEp === undefined) throw new Error("Episode is unavaliable");
-      } else throw new Error("Episode is unavaliable");
-    } else throw new Error("Episode is unavaliable");
+      const titleData = await getByTitle(getId, epNumber);
+      currentEp = titleData[0];
+      if (titleData[1] !== undefined) animeEpisodes = titleData[1];
+    }
   }
+
+  if (currentEp === undefined) {
+    // 🥲 damm. were gonna have to use Anilist
+    animeEpisodes = data.episodes
+    currentEp = animeEpisodes.find(e => e.number === epNumber)
+  }
+
+  if (currentEp === undefined || animeEpisodes.length === 0) throw new Error("Cant get Ep")
 
   const canGogo = checkGogo.test(currentEp.id);
   let dataEp: aniStreamLinks | gogoStream;

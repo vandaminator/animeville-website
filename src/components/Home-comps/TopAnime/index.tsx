@@ -11,9 +11,9 @@ function TopAnime({ topData }: Props) {
     const type = action.type;
 
     if (type === "next") {
-      count += count !== 4 ? 1 : -4;
+      count += count !== 9 ? 1 : -9;
     } else if (type === "back") {
-      count -= count !== 0 ? 1 : -4;
+      count -= count !== 0 ? 1 : -9;
     }
 
     return { ...state, count };
@@ -71,7 +71,7 @@ function TopAnime({ topData }: Props) {
               </h1>
               <div
                 id="description"
-                className="h-[145px] overflow-hidden max-sm:text-xs"
+                className="h-[81px] sm:h-[120px] overflow-hidden max-sm:text-xs"
               ></div>
               <div className="space-y-3">
                 <p className="my-2">{currentTop.genres.join(", ")}</p>
@@ -85,18 +85,8 @@ function TopAnime({ topData }: Props) {
             </div>
 
             {/* top nav */}
-            <div className="flex flex-col justify-evenly">
-              <div className="space-y-3">
-                {topData?.map((_value, index) => (
-                  <div
-                    key={index}
-                    className={`h-3 w-3 rounded-full max-sm:h-2 max-sm:w-2 ${
-                      index === currentNum.count ? "bg-nightblue" : "bg-gold"
-                    }`}
-                  />
-                ))}
-              </div>
-              <div className="space-y-2">
+            <div className="flex flex-col justify-end">
+              <div className="space-y-2 p-2">
                 <AiOutlineArrowRight size={"24px"} onClick={Next} />
                 <AiOutlineArrowLeft size={"24px"} onClick={Back} />
               </div>
