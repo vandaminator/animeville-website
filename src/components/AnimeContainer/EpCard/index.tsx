@@ -13,7 +13,7 @@ type Props = {
 function EpCard({ img, title, epNum, id }: Props) {
   return (
     <li className="bg-lightjetblack">
-      <Link href={`/watch/${id}?epNum=${epNum}&title=${title}`} className="text-creamywhite bg-lightjetblack">
+      <Link href={`/watch/${id}?title=${title}`} className="text-creamywhite bg-lightjetblack">
         <Image
           src={img}
           alt="animeImage"
