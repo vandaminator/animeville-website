@@ -7,6 +7,7 @@ import { AdvancedSearch, Result } from "@/types/Anilist/AdvancedAnimeSearch";
 import SearchLoading from "./loading";
 import AnimeContainer from "@/components/AnimeContainer";
 import { AiOutlineArrowDown } from "react-icons/ai";
+import AdComp from "@/components/AdComp";
 
 function SearchPage() {
   const searchParams = useSearchParams();
@@ -95,6 +96,7 @@ function SearchPage() {
           )}
           {content.length !== 0 ? (
             <>
+              <AdComp />
               <AnimeContainer content={content} contentType="card" />
               <div
                 className="w-full cursor-pointer rounded-lg bg-lightjetblack/75 p-3 hover:bg-lightjetblack hover:text-gold active:bg-lightjetblack active:text-gold"
@@ -103,6 +105,7 @@ function SearchPage() {
               >
                 <AiOutlineArrowDown size={"24px"} className="mx-auto" />
               </div>
+              <AdComp />
             </>
           ) : (
             <h1 className="my-10 text-2xl">No results</h1>

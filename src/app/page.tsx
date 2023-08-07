@@ -6,6 +6,7 @@ import { Result as trendingResult } from "@/types/Anilist/Trending";
 import { Result as epResult } from "@/types/Anilist/RecentEP";
 import TopAnime from "@/components/Home-comps/TopAnime";
 import Body from "@/components/Home-comps/Body";
+import AdComp from "@/components/AdComp";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,12 +30,24 @@ function Home() {
     loadData();
   }, []);
 
+  useEffect(() => {
+    var ads = document.getElementsByClassName('adsbygoogle').length;
+    for (var i = 0; i < ads; i++) {
+      try {
+        // @ts-ignore
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
+    }
+  }, []);
+
+
   return (
     <>
       {isLoading && <Loading />}
       {!isLoading && (
         <>
           <TopAnime topData={topData} />
+          <AdComp />
           <Body initial={animeData} />
         </>
       )}
